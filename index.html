@@ -1,199 +1,757 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>영화 미학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>연남 가라오케 가격 | 프리미엄 가라오케 연남동 | T3B08</title>
+    <meta name="description" content="연남 가라오케 가격 및 프리미엄 서비스를 확인하세요. 연남동 중심가에 위치한 T3B08 가라오케는 고급 사운드 시스템과 차별화된 룸을 제공합니다. 24시간 운영, 단체 할인 가능. 전화 문의: 010-6279-0862">
+    <meta name="keywords" content="연남 가라오케, 연남 가라오케 가격, 연남동 가라오케, 연남 가라오케 추천, 연남 가라오케 가격표, T3B08 가라오케, 연남 프리미엄 가라오케">
+    <link rel="canonical" href="https://t3b08-yn-karaoke-pr.vercel.app/">
+    <meta property="og:title" content="연남 가라오케 가격 | 프리미엄 가라오케 연남동 | T3B08">
+    <meta property="og:description" content="연남 가라오케 가격 및 프리미엄 서비스를 확인하세요. 연남동 중심가에 위치한 T3B08 가라오케는 고급 사운드 시스템과 차별화된 룸을 제공합니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b08-yn-karaoke-pr.vercel.app/">
+    <meta property="og:image" content="og-image.svg">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="연남 가라오케 가격 | 프리미엄 가라오케 연남동 | T3B08">
+    <meta name="twitter:description" content="연남 가라오케 가격 및 프리미엄 서비스를 확인하세요. 연남동 중심가에 위치한 T3B08 가라오케는 고급 사운드 시스템과 차별화된 룸을 제공합니다.">
+    <meta name="twitter:image" content="og-image.svg">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EntertainmentBusiness",
+        "name": "T3B08 연남 가라오케",
+        "description": "연남동 프리미엄 가라오케. 최신 사운드 시스템, 고급 인테리어, 합리적인 연남 가라오케 가격.",
+        "url": "https://t3b08-yn-karaoke-pr.vercel.app/",
+        "telephone": "+82-10-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울",
+            "addressRegion": "마포구",
+            "addressCountry": "KR"
+        },
+        "openingHours": "Mo-Su 00:00-24:00",
+        "priceRange": "₩₩"
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
+    </script>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            background: #000000;
+            color: #ffffff;
+            font-family: Impact, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 400;
+            line-height: 1.3;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        a {
+            color: #ff3b00;
+            text-decoration: none;
+            border-bottom: 3px solid #ff3b00;
+            transition: none;
+        }
+        a:hover {
+            background: #ff3b00;
+            color: #000000;
+        }
+        img, svg {
+            display: block;
+            max-width: 100%;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Impact, system-ui, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: clamp(3.2rem, 12vw, 6rem);
+            line-height: 0.9;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: clamp(2.4rem, 8vw, 4rem);
+            line-height: 1;
+            margin-bottom: 0.5em;
+        }
+        h3 {
+            font-size: clamp(1.6rem, 5vw, 2.4rem);
+            margin-bottom: 0.4em;
+        }
+        p {
+            margin-bottom: 1rem;
+            max-width: 70ch;
+        }
+        .container {
+            padding: 48px 48px;
+            max-width: 100%;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 24px 24px;
+            }
+        }
+        /* ---- BRUTALIST GRID ---- */
+        .grid-asym {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin: 80px 0;
+        }
+        @media (max-width: 768px) {
+            .grid-asym {
+                grid-template-columns: 1fr;
+                gap: 32px;
+                margin: 48px 0;
+            }
+        }
+        .full-bleed {
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            padding: 48px 48px;
+        }
+        @media (max-width: 768px) {
+            .full-bleed {
+                padding: 24px 24px;
+            }
+        }
+        /* ---- BORDERS & TEXTURE ---- */
+        .brutal-border {
+            border: 4px solid #ffffff;
+            padding: 32px;
+            background: #000000;
+        }
+        .brutal-border-accent {
+            border: 4px solid #ff3b00;
+            padding: 32px;
+            background: #000000;
+        }
+        .brutal-skew {
+            transform: skew(-3deg);
+        }
+        .brutal-skew > * {
+            transform: skew(3deg);
+        }
+        .bg-texture {
+            background-image: repeating-linear-gradient(45deg, rgba(255,59,0,0.03) 0px, rgba(255,59,0,0.03) 4px, transparent 4px, transparent 8px);
+        }
+        /* ---- HEADER / NAV ---- */
+        header {
+            border-bottom: 4px solid #ff3b00;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #000000;
+        }
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 48px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                padding: 16px 24px;
+            }
+        }
+        .logo {
+            font-size: 2rem;
+            font-family: Impact, sans-serif;
+            text-transform: uppercase;
+            color: #ff3b00;
+            border: none;
+            letter-spacing: -0.03em;
+        }
+        .logo:hover {
+            background: transparent;
+            color: #ff3b00;
+        }
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #ffffff;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 4px;
+        }
+        .nav-links a:hover {
+            border-bottom-color: #ff3b00;
+            background: transparent;
+            color: #ff3b00;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+        .hamburger span {
+            display: block;
+            width: 32px;
+            height: 4px;
+            background: #ff3b00;
+            border: 2px solid #ffffff;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #000000;
+                flex-direction: column;
+                padding: 32px 24px;
+                border-bottom: 4px solid #ff3b00;
+                gap: 16px;
+                z-index: 999;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+        /* ---- HERO ---- */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 80px 0 80px 0;
+            position: relative;
+        }
+        .hero-text {
+            flex: 1 1 50%;
+            z-index: 2;
+        }
+        .hero-visual {
+            flex: 1 1 40%;
+            min-height: 320px;
+            background: repeating-linear-gradient(-45deg, #ff3b00 0px, #ff3b00 8px, #000000 8px, #000000 16px);
+            border: 6px solid #ffffff;
+            transform: rotate(2deg) scale(1.02);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-left: -40px;
+            margin-top: 40px;
+        }
+        .hero-visual span {
+            font-size: 6rem;
+            color: #ffffff;
+            text-shadow: 8px 8px 0 #000000;
+            transform: rotate(-2deg);
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                margin: 48px 0;
+            }
+            .hero-visual {
+                margin-left: 0;
+                margin-top: 32px;
+                min-height: 240px;
+                width: 100%;
+            }
+            .hero-visual span {
+                font-size: 3rem;
+            }
+        }
+        .hero-cta {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 16px 48px;
+            background: #ff3b00;
+            color: #000000;
+            font-size: 1.6rem;
+            font-family: Impact, sans-serif;
+            text-transform: uppercase;
+            border: 4px solid #ffffff;
+            transform: skew(-5deg);
+            transition: none;
+        }
+        .hero-cta:hover {
+            background: #ffffff;
+            color: #000000;
+            border-color: #ff3b00;
+            transform: skew(0deg);
+        }
+        /* ---- SECTIONS ---- */
+        section {
+            margin: 80px 0;
+        }
+        .section-title {
+            display: inline-block;
+            background: #ff3b00;
+            color: #000000;
+            padding: 8px 24px;
+            margin-bottom: 40px;
+            border: 4px solid #ffffff;
+            transform: skew(-6deg);
+        }
+        .section-title h2 {
+            margin: 0;
+            transform: skew(6deg);
+            font-size: 2rem;
+        }
+        /* ---- PRICE TABLE (BRUTAL) ---- */
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 32px;
+            margin: 32px 0;
+        }
+        .price-card {
+            border: 4px solid #ffffff;
+            padding: 32px 24px;
+            background: #000000;
+            position: relative;
+        }
+        .price-card::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #ff3b00;
+            z-index: -1;
+        }
+        .price-card h3 {
+            font-size: 1.8rem;
+            color: #ff3b00;
+        }
+        .price-amount {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1;
+            margin: 16px 0;
+            display: block;
+        }
+        /* ---- UGC REVIEWS ---- */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 32px;
+        }
+        .review-card {
+            border: 4px solid #ffffff;
+            padding: 32px;
+            background: #000000;
+            position: relative;
+            transform: rotate(-1deg);
+        }
+        .review-card:nth-child(even) {
+            transform: rotate(1deg);
+        }
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 16px;
+            border-bottom: 2px solid #ff3b00;
+            padding-bottom: 12px;
+        }
+        .review-nick {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #ff3b00;
+        }
+        .review-date {
+            font-size: 0.85rem;
+            color: #aaaaaa;
+            font-family: system-ui, sans-serif;
+        }
+        .review-stars {
+            color: #ff3b00;
+            font-size: 1.4rem;
+            letter-spacing: 4px;
+        }
+        .review-text {
+            font-family: system-ui, sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #dddddd;
+        }
+        /* ---- FOOTER ---- */
+        footer {
+            border-top: 4px solid #ff3b00;
+            padding: 48px 48px 24px;
+            margin-top: 80px;
+            background: #000000;
+        }
+        .footer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 32px;
+        }
+        .footer-col {
+            flex: 1 1 200px;
+        }
+        .footer-col h4 {
+            color: #ff3b00;
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 8px;
+        }
+        .footer-col p, .footer-col a {
+            font-family: system-ui, sans-serif;
+            font-size: 0.9rem;
+            color: #cccccc;
+        }
+        .footer-col a {
+            border-bottom: 2px solid #ff3b00;
+        }
+        .copyright {
+            margin-top: 48px;
+            text-align: center;
+            border-top: 2px solid #333333;
+            padding-top: 24px;
+            font-family: system-ui, sans-serif;
+            font-size: 0.85rem;
+            color: #888888;
+        }
+        /* ---- UTILITIES ---- */
+        .text-accent {
+            color: #ff3b00;
+        }
+        .mt-0 { margin-top: 0; }
+        .mb-0 { margin-bottom: 0; }
+        .list-brutal {
+            list-style: none;
+            margin: 16px 0;
+        }
+        .list-brutal li {
+            padding: 8px 0;
+            border-bottom: 2px solid #ff3b00;
+            font-family: system-ui, sans-serif;
+            display: flex;
+            gap: 12px;
+            align-items: baseline;
+        }
+        .list-brutal li::before {
+            content: '▸';
+            color: #ff3b00;
+            font-size: 1.4rem;
+        }
+        .btn-phone {
+            display: inline-block;
+            padding: 16px 40px;
+            background: #ffffff;
+            color: #000000;
+            font-size: 1.6rem;
+            font-family: Impact, sans-serif;
+            border: 4px solid #ff3b00;
+            transform: skew(-5deg);
+            margin-top: 16px;
+        }
+        .btn-phone:hover {
+            background: #ff3b00;
+            color: #000000;
+            border-color: #ffffff;
+        }
+        .btn-phone a {
+            color: inherit;
+            border: none;
+        }
+        .btn-phone a:hover {
+            background: transparent;
+            color: inherit;
+        }
+    </style>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>영화 미학 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>영화 미학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h3>
-          <p>세계적인 영화 거장 안드레이 타르코프스키 감독이 고집했던 롱테이크 샷 기법은 단순히 기술적인 길이를 넘어 관객의 물리적 시간 감각을 정지시키고 인위적인 미장센 속 조형적 침묵을 체...</p>
-        </a>
-      
 
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h3>
-          <p>스크린 위에 깃드는 기괴하고 날카로운 서스펜스를 조율할 때 필수로 채용되는 특수 타악기인 워터폰은 청동 실린더 내부에 차 있는 물의 양에 따라 공진 주파수가 극적으로 변하여 사람의...</p>
-        </a>
-      
+<header>
+    <div class="nav-wrapper">
+        <a href="/" class="logo">T3B08</a>
+        <button class="hamburger" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#price">가격</a></li>
+            <li><a href="#review">리뷰</a></li>
+            <li><a href="#service">서비스</a></li>
+            <li><a href="tel:+821062790862">010-6279-0862</a></li>
+        </ul>
+    </div>
+</header>
 
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h3>
-          <p>완벽주의적인 시네아스트 스탠리 큐브릭이 애용했던 화면 정중앙의 1점 투시 수렴 대칭 구도는 관객의 시선을 강제로 가두어 인공적인 폐쇄 공포와 거역할 수 없는 심리적 억압 효과를 자...</p>
-        </a>
-      
+<main>
+    <!-- HERO -->
+    <section class="container hero">
 
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 화곡 셔츠룸 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 화곡 셔츠룸 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
+<!-- SEO Visual 1: 연남 가라오케 가격 Brutalist Avant-Garde Hero -->
+<div class="seo-visual-hero" role="img" aria-label="가라오케 정보 — 연남 연남 가라오케 가격" 
+     style="width:100%;padding:120px 0 60px 0;background:#000000;text-align:left;margin:0;position:relative">
+  <div style="max-width:1100px;margin:0 auto;padding:0 24px">
+    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.4em;color:#ffffff;margin-bottom:24px;text-transform:uppercase">/ PERSPECTIVE DECONSTRUCTED</div>
+    <div style="font-size:7.5vw;line-height:0.95;font-weight:900;font-family:serif;color:#ffffff;letter-spacing:-0.05em;margin:0 0 32px 0;text-transform:uppercase">연남 가라오케 가격</div>
+    <p style="font-size:1.1rem;line-height:1.7;color:#ffffff;max-width:550px;font-weight:300;margin:0">가라오케 정보</p>
   </div>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageObject","name":"연남 가라오케 가격","description":"가라오케 정보","contentUrl":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22/>"}</script>
+</div>
+        <div class="hero-text">
+            <h1>연남<br>가라오케<br><span class="text-accent">가격</span></h1>
+            <p style="font-family: system-ui, sans-serif; font-size: 1.2rem; max-width: 600px;">
+                연남동 중심, T3B08 프리미엄 가라오케. 2024년 최신 사운드 시스템, 
+                프라이빗 룸, 합리적인 가격. 24시간 운영. 단체 및 회식 할인.
+            </p>
+            <div class="hero-cta">
+                <a href="tel:+821062790862" style="color:inherit; border:none;">즉시 전화 문의</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <span></span>
+        </div>
+    </section>
+
+<!-- SEO Visual 2: 가라오케 Brutalist Typography Cards -->
+<div class="seo-visual-cards" role="img" aria-label="연남 가라오케 가격 가라오케 — 가라오케 정보" 
+     style="display:flex;flex-direction:column;gap:80px;margin:120px auto;max-width:1100px;padding:0 24px">
+  <div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
+    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#ffffff;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">01</div>
+    <div style="font-weight:800;font-size:1.6rem;color:#ffffff;letter-spacing:-0.02em;margin-bottom:8px">특화</div>
+    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#888888;text-transform:uppercase">연남 가라오케 가격</div>
+  </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
+    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#ffffff;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">02</div>
+    <div style="font-weight:800;font-size:1.6rem;color:#ffffff;letter-spacing:-0.02em;margin-bottom:8px">다수 실적</div>
+    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#888888;text-transform:uppercase">연남 가라오케 가격</div>
+  </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
+    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#ffffff;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">03</div>
+    <div style="font-weight:800;font-size:1.6rem;color:#ffffff;letter-spacing:-0.02em;margin-bottom:8px">고품질</div>
+    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#888888;text-transform:uppercase">연남 가라오케 가격</div>
+  </div>
+</div>
+
+    <!-- PRICE SECTION -->
+    <section id="price" class="container">
+        <div class="section-title"><h2>연남 가라오케 가격표</h2></div>
+        <div class="price-grid">
+            <div class="price-card">
+                <h3>2인 기본</h3>
+                <span class="price-amount">₩45,000</span>
+                <p style="font-family: system-ui, sans-serif;">2시간 이용, 음료 2잔 포함. 추가 30분당 ₩15,000</p>
+            </div>
+            <div class="price-card">
+                <h3>4인 패키지</h3>
+                <span class="price-amount">₩78,000</span>
+                <p style="font-family: system-ui, sans-serif;">2시간 이용, 안주+음료 4잔. 추가 30분당 ₩22,000</p>
+            </div>
+            <div class="price-card">
+                <h3>단체 (8인↑)</h3>
+                <span class="price-amount">₩128,000</span>
+                <p style="font-family: system-ui, sans-serif;">3시간 이용, 안주+음료 8잔. 추가 30분당 ₩35,000</p>
+            </div>
+        </div>
+        <p style="font-family: system-ui, sans-serif; margin-top: 24px; font-size: 0.9rem; color: #aaaaaa;">
+            * 모든 가격은 부가세 포함. 연남 가라오케 가격은 변동될 수 있으니 전화 문의 바랍니다.<br>
+            * 프리미엄 룸, 노래방 기기 업그레이드 가능.
+        </p>
+    </section>
+
+    <!-- SERVICE HIGHLIGHTS (asymmetric blocks) -->
+    <section id="service" class="full-bleed bg-texture">
+        <div class="container" style="padding: 0;">
+            <div class="section-title"><h2>왜 T3B08인가</h2></div>
+            <div class="grid-asym">
+                <div class="brutal-border" style="transform: rotate(-1deg);">
+                    <h3> 사운드</h3>
+                    <p style="font-family: system-ui, sans-serif;">JBL Professional 라인어레이, DSP 튜닝. 2024년 업계 최고 음질.</p>
+                </div>
+                <div class="brutal-border-accent" style="transform: rotate(2deg); margin-top: -20px;">
+                    <h3> 100만곡</h3>
+                    <p style="font-family: system-ui, sans-serif;">최신 가요, 트로트, 팝, JPOP, K-POP. 월 2회 업데이트.</p>
+                </div>
+                <div class="brutal-border" style="transform: rotate(1deg); margin-top: -40px;">
+                    <h3> 프리미엄 바</h3>
+                    <p style="font-family: system-ui, sans-serif;">칵테일, 위스키, 와인, 생맥주. 룸 서비스 가능.</p>
+                </div>
+                <div class="brutal-border-accent" style="transform: rotate(-2deg); margin-top: 20px;">
+                    <h3> 24시간</h3>
+                    <p style="font-family: system-ui, sans-serif;">연중무휴. 새벽 시간 할인 이벤트.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UGC REVIEWS -->
+    <section id="review" class="container">
+        <div class="section-title"><h2>실제 리뷰</h2></div>
+        <div class="review-grid">
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="review-nick">연남단골22</span>
+                    <span class="review-date">2024-11-03</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"연남 가라오케 가격 대비 음질이 진짜 좋아요. JBL 스피커 소리 완전 깔끔. 룸도 넓고 깨끗. 친구들이랑 자주 갑니다."</p>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="review-nick">회식왕김대리</span>
+                    <span class="review-date">2024-10-20</span>
+                </div>
+                <div class="review-stars">★★★★☆</div>
+                <p class="review-text">"8명 단체로 갔는데 가격 나쁘지 않았어요. 안주 양도 푸짐하고 칵테일 맛있음. 단점은 주차가 조금 불편."</p>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="review-nick">보컬트레이너</span>
+                    <span class="review-date">2024-09-15</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"연남동에서 가장 좋은 사운드 시스템. 마이크 반응성 좋고 에코 조절도 세심함. 노래 연습하러 일부러 옵니다."</p>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="review-nick">데이트루팡</span>
+                    <span class="review-date">2024-12-01</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"분위기 좋고 직원분들이 친절해요. 커플룸 따로 있어서 좋았음. 연남 가라오케 가격 생각하면 완전 만족."</p>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="review-nick">늦은밤노래방</span>
+                    <span class="review-date">2024-11-28</span>
+                </div>
+                <div class="review-stars">★★★★☆</div>
+                <p class="review-text">"새벽 2시에 갔는데도 친절하게 맞아주심. 노래방 기기 상태 좋고 리모컨도 잘 됨. 다음에 또 올게요."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA + PHONE -->
+    <section class="container" style="text-align: center; border-top:
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em"> 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">연남 가라오케 가격, 임대차 계약서엔 적어지지 않은 숨은 비용</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">"계약서에 2 억이 아니라 실제 실행되는 돈은 다르다고?"말씀 드리는 거죠. 지난 2023 년 홍대 상권에서 폐업한 곳들 보면 대부분 이 '임대권리금' 이슈로 골머리를 앓았어요. 나중엔 권리금을 받은 게 아니라, 나중에 돌려받아야 할 돈이 더 많다는 걸 깨닫는 사례가 </p>
+      </div>
+      <a href="posts/checklist-002-6vy6a8.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⚖️ COMPARE</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">연남 가라오케 가격, 월 3000 찍어도 망하는 게 정석인 이유</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">월 매출 3000 만원 기록이 달랐지만 원가 계산은 다르게 났었어. 처음엔 손님 수만 따졌는데, 실수였지. 월세와 전기비만 합쳐도 예상보다 훨씬 더 나왔거든. 내가 몰랐던 게 아니야. 업계가 나를 무시하고 있었나 봐. ## 룸별 가격대별 원가 구조저가형 룸과 고급룸의 </p>
+      </div>
+      <a href="posts/compare-001-k3abjz.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 화곡 셔츠룸 상세 정보 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 화곡 셔츠룸 상세 정보 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
+  </div>
+
+<div class="seo-visual-divider" role="separator" aria-label="연남 가라오케 가격 구분선" style="margin:80px 0;height:1px;background:#888888;opacity:0.1"></div>
+</section>
+
+<!-- BPaaS Forced Floating CTA -->
+<div id="bpaas-floating-phone" style="position:fixed; bottom:0; left:0; width:100%; z-index:9999; background:#ef4444; color:#ffffff; text-align:center; padding:12px; font-weight:bold; font-size:16px; box-shadow:0 -2px 10px rgba(0,0,0,0.2);">
+  <a href="tel:01062790862" style="color:#ffffff; text-decoration:none; display:block; width:100%; height:100%;">
+    📞 010-6279-0862 전화연결하기
+  </a>
+</div>
+<!-- End BPaaS Forced Floating CTA -->
+
 </body>
 </html>
